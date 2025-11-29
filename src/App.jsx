@@ -435,7 +435,7 @@ export default function App() {
       return;
     }
 
-    try:
+    try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
 
